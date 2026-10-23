@@ -1,0 +1,12 @@
+{
+  "name": "@nexus/core",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "echo \"No test specified\" && exit 0"
+  },
+  "dependencies": {}
+}
