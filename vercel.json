@@ -1,0 +1,30 @@
+{
+  "version": 2,
+  "installCommand": "npm install -g pnpm@9.12.0 && pnpm install --frozen-lockfile=false",
+  "buildCommand": "pnpm build",
+  "framework": "nextjs",
+  "regions": ["cpt1", "fra1"],
+  "functions": {
+    "apps/web-store/src/app/api/**/*.ts": {
+      "memory": 1024,
+      "maxDuration": 15
+    }
+  },
+  "crons": [
+    {
+      "path": "/api/cron/security-audit",
+      "schedule": "0 */4 * * *"
+    },
+    {
+      "path": "/api/cron/daily-seo-reindex",
+      "schedule": "0 2 * * *"
+    },
+    {
+      "path": "/api/cron/popia-log-purge",
+      "schedule": "0 0 1 * *"
+    }
+  ],
+  "env": {
+    "NODE_ENV": "production"
+  }
+}
