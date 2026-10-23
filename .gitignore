@@ -1,0 +1,24 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Environment Variables & Secrets
+.env
+.env.local
+.env.production
+*.pem
+secrets/
+
+# Build & Output Directories
+.next/
+dist/
+build/
+out/
+target/
+*.tsbuildinfo
+
+# OS & Editor Files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
