@@ -1,0 +1,8 @@
+{
+  "name": "@nexus/roxy-chatbot",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": { "build": "tsc" },
+  "dependencies": { "@nexus/core": "workspace:*", "@nexus/memory-guard": "workspace:*" }
+}
